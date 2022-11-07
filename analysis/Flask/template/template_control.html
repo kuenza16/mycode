@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>control</title>
+</head>
+
+<body>
+    <ul>
+        {% for pup in puppies %}
+        <li>{{pup}} </li>
+    </ul>
+    {%if 'Fluffy' in puppies%}
+    <p>Found you in the list of puppies Fluffy!</p>
+    {%else}
+    <p>Fluffy isn't in this list.</p>
+    {% endif %}
+
+</body>
+
+</html>
